@@ -1,0 +1,30 @@
+# DEFAULTS
+ServerSignature Off
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+SetEnv America/Toronto
+SetEnv SERVER_ADMIN maziar@webrun.ca
+
+# Rewrites
+RewriteEngine On
+RewriteBase /
+
+
+# Deny access to .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+#Options All -Indexes
+
+#DONT CHANGE THE CODE BELOW
+#START
+AuthUserFile /home/f6team13/.htpasswd
+AuthType Basic
+AuthName "GBLearn"
+<Limit GET>
+require valid-user
+</Limit>
+#END
+

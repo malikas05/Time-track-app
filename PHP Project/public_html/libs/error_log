@@ -1,0 +1,4 @@
+[02-Dec-2016 00:31:15 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/f6team13/public_html/libs/ajax.php on line 3
+[02-Dec-2016 00:35:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/f6team13/public_html/libs/ajax.php on line 8
+[02-Dec-2016 00:40:50 UTC] PHP Warning:  require_once(php/database/DBController.php): failed to open stream: No such file or directory in /home/f6team13/public_html/php/FunctionClass.php on line 2
+[02-Dec-2016 00:40:50 UTC] PHP Fatal error:  require_once(): Failed opening required 'php/database/DBController.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/f6team13/public_html/php/FunctionClass.php on line 2

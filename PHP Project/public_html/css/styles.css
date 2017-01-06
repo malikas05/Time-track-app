@@ -1,0 +1,273 @@
+/* Main Controls Styles START */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+#wrap{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+}
+
+.boosterDown{
+    padding-top: 120px;
+    padding-left: 40px;
+}
+a.navbar-brand, a.navbar-brand:visited{
+    font-size: xx-large;
+    color: white;
+}
+.dayOfTheWeek{
+    clear: both;
+    padding-top: 5px;
+    min-width: 950px;
+}
+.dayOfTheWeek h3{
+    padding-bottom: 5px;
+    border-bottom: #999 1px solid;
+}
+.footer{
+    border-top: #999 1px solid;
+    padding-top: 10px;
+    height: 60px;
+    background-color: #f5f5f5;
+    margin-top: 80px;
+}
+ul.nav{
+    float: right;
+}
+#tasksOfTheWeek{
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+#allTasks{
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+div.modal-footer{
+    border-top: none;
+}
+/* Main Controls Styles END */
+
+/* Task Styles START */
+div.current-task{
+    margin-top:5px;
+    border-top: #444 1px solid;
+}
+div.old-task{
+    margin-top:5px;
+    border-bottom: #CCC 1px solid;
+}
+.current-task select, .current-task input, .old-task select, .old-task input{
+    background: transparent;
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#currentTask .delete, .old-task .delete{
+    float: left;
+    margin-top: 20px;
+}
+#currentTask .delete a{
+    color: #444;
+}
+#currentTask .delete a:hover{
+    color: #FFF;
+}
+#currentTask .delete a:active{
+    color: #880000;
+    padding-left: 1px;
+}
+.old-task .delete a{
+    color: #CCC;
+}
+.old-task .delete a:hover{
+    color: #000;
+}
+.old-task .delete a:active{
+    color: #AA0000;
+    padding-left: 1px;
+}
+
+#currentTask input.taskName, .old-task .taskName {
+    font-size: large;
+    color: white;
+    padding: 10px 0 0 15px;
+    margin-bottom: 10px;
+}
+.old-task .taskName {
+    color: #000;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+#currentTask select.tags, .old-task .tags{
+    overflow:hidden;
+    height: 32px;
+    padding: 0 2px 2px 15px;
+    position: relative;
+    left: -15px;
+}
+.old-task .tags{
+    left: 10px;
+    top: -30px;
+}
+#currentTask select.tags option, .old-task .tags option{
+    display: block;
+    float: left;
+    padding: 0 2px;
+}
+#currentTask select.projects, .old-task select.projects {
+    position: relative;
+    left: 250px;
+    top: -38px;
+    max-width: 300px;
+    padding: 0 0 0 3px;
+    font-size: large;
+}
+.old-task select.projects{
+    left: 320px;
+}
+#currentTask select.projects option{
+    background: #333;
+    color: white;
+}
+.old-task select.projects option{
+    background: white;
+    color: #333;
+}
+#currentTask .timeSpent, .old-task .timeSpent {
+    color: white;
+    position: relative;
+    font-size: xx-large;
+    left: 650px;
+    top: -77px;
+    padding: 0;
+}
+.old-task .timeSpent {
+    color: black;
+    left: 800px;
+    top: -110px;
+}
+#currentTask .timePoints, .old-task .timePoints {
+    left: 745px;
+    top: -95px;
+    color: #AAA;
+    padding: 0;
+    position: relative;
+}
+.old-task .timePoints{
+    color: #000;
+    left: 798px;
+    top: -120px;
+}
+#currentTask .timePoints .bootstrap-dattimepicker-widget, .old-task .startTime .bootstrap-dattimepicker-widget{
+    margin-left: -100px;
+}
+#currentTask .startTime, .old-task .startTime{
+    color: white;
+    width: 40px;
+    position: relative;
+    left: -92px;
+    top: 2px;
+    padding: 0;
+}
+.old-task .startTime{
+    color: #000;
+    left: 3px;
+    top: -1px;
+}
+#currentTask .endTime, .old-task .endTime{
+    color: white;
+    position: relative;
+    left: -99px;
+    top: 3px;
+    padding: 0;
+}
+.old-task .endTime{
+    color: #000;
+    left: 7px;
+    top: -1px;
+}
+#currentTask .taskControl, .old-task .taskControl{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: 750px;
+    top: -138px;
+    margin-bottom: -130px;
+    padding: 0 0 5px 0;
+}
+.old-task .taskControl{
+    font-size: 10px;
+    left: 900px;
+    top: -165px;
+}
+#currentTask .taskControl span.circleButton{
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -12px;
+}
+.old-task .taskControl span.circleButton{
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -12px;
+}
+#currentTask .taskControl span.play, .old-task .taskControl span.play{
+    background-color: green;
+    padding-left: 4px;
+    padding-top: 3px;
+}
+#currentTask .taskControl span.stop{
+    background-color: #b51111;
+    padding-top: 3px;
+}
+#currentTask .taskControl:hover span.stop{
+    background-color: #9c0101;
+}
+#currentTask .taskControl:hover span.play{
+    background-color: #046904;
+}
+#currentTask .taskControl:active span.stop, #currentTask .taskControl:active span.stop span{
+    background-color: green;
+}
+#currentTask .taskControl:active span.play, #currentTask .taskControl:active span.play span{
+    background-color: #b51111;
+}
+ .old-task .taskControl span.play{
+    background-color: #75AA75;
+    padding-top: 2px;
+ }
+.old-task .taskControl span.stop{
+    background-color: #AA7575;
+    padding-top: 2px;
+}
+.old-task .taskControl:hover span.stop{
+    background-color: #ab5353;
+}
+.old-task .taskControl:hover span.play{
+    background-color: #49a249;
+}
+.old-task .taskControl:active span.stop, .old-task .taskControl:active span.stop span{
+    background-color: #75AA75;
+}
+.old-task .taskControl:active span.play, .old-task .taskControl:active span.play span{
+    background-color: #AA7575;
+}
+/* Task Styles END */
